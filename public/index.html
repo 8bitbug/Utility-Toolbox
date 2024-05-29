@@ -12,18 +12,26 @@
 <body>
     <section class="topBar">
         <div class="logo">UTB</div>
+        <noscript><div style="color: white; font-size: 2rem; position: absolute; left: 50%; transform: translateX(-50%);">Please turn on javascript, The website is unusable</div></noscript>
         <section class="accountRelated">
             <div class="logInButton">Log In</div>
             <div class="signUpButton">Sign Up</div>
         </section>
     </section>
     <section class="main">
+        <div class="gridBackground"></div>
         <div class="slogans">
             <div class="slogan">All-in-One Hub of tools</div>
             <div class="slogan2">To simplify your life</div>
         </div>
         <section class="aboutWeb">
-            <canvas id="animationAbout"></canvas>
+            <section style="height: 100%; width: 50%; display: flex; justify-content: center; align-items: center;">
+                <section class="reasonsContainer">
+                    <div id="reasonsBox1">Why choose Utility Toolbox?</div>
+                    <div id="reasonsBox2">Collaborate and work with eachother</div>
+                    <div id="reasonsBox3">Saves where you left off in the cloud</div>
+                </section>
+            </section>
             <section class="aboutText">
                 <div class="aboutServiceText">Introducing Utility Toolbox,
                  the ultimate all-in-one toolbox designed to streamline your daily tasks and enhance your learning experience. 
@@ -38,5 +46,4 @@
     </section>
 </body>
 <script src="script.js"></script>
-<script src="animation.js"></script>
 </html>
