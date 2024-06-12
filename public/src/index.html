@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilitly Toolbox</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <section class="topBar">
+        <div class="logo">UTB</div>
+        <noscript><div style="color: white; font-size: 2rem; position: absolute; left: 50%; transform: translateX(-50%);">Please turn on javascript, The website is unusable</div></noscript>
+        <section class="accountRelated">
+            <div class="logInButton">Log In</div>
+            <div class="signUpButton">Sign Up</div>
+        </section>
+    </section>
+    <section class="main">
+        <div class="gridBackground"></div>
+        <div class="slogans">
+            <div class="slogan">All-in-One Hub of tools</div>
+            <div class="slogan2">To simplify your life</div>
+        </div>
+        <div class="getStartedButton">Get Started</div>
+    </section>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  for (let i = 0; i < 2000; i++) {
+    const gridBackground = document.querySelector('.gridBackground')
+    const div = document.createElement("div");
+    div.classList.add("item");
+    gridBackground.appendChild(div)
+  }
+});
+
+const signUpButton = document.querySelector('.signUpButton');
+signUpButton.addEventListener('click', () => {window.location.href = '/signup'})
+const getStartedButton = document.querySelector('.getStartedButton');
+getStartedButton.onclick = () => {
+  window.location.href = "/signup";
+}
+</script>
+</html>
